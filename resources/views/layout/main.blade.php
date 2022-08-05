@@ -112,7 +112,7 @@ $.widget.bridge('uibutton', $.ui.button)
 <!-- dropzonejs -->
 <script src="/plugins/dropzone/min/dropzone.min.js"></script>
 <!-- AdminLTE App -->
-<script src="{{ asset('/public/dist/js/adminlte.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('/adminlte.min.js') }}"></script>
 
 <script src="/dist/js/timepicker.js"></script>
 <script>
