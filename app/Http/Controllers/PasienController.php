@@ -91,7 +91,7 @@ class PasienController extends Controller
      */
     public function edit(Pasien $pasien)
     {
-        dd($pasien);
+        // dd($pasien);
         return view('components.pasien.edit',[
             'title' => 'Ubah Data Pasien',
             'genders' => Gender::all(),
