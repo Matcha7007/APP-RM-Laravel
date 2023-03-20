@@ -16,19 +16,16 @@ class Dokter extends Model
 
     protected $guarded = ['id'];
 
-    public function poli(){
+    public function poli() {
         return $this->belongsTo(Poli::class);
     }
 
-    // public function pelayanan(){
-    //     return $this->belongsTo(Pelayanan::class);
-    // }
 
     public function gender() {
         return $this->belongsTo(Gender::class);
     }
 
-    public function rekam_medis(){
+    public function rekam_medis() {
         return $this->hasMany(RekamMedis::class);
     }
 
