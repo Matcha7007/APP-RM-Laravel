@@ -10,11 +10,11 @@ class Gender extends Model
     use HasFactory;
     protected $guarded = ['id'];
 
-    public function dokters(){
+    public function dokters() {
         return $this->hasMany(Dokter::class);
     }
 
-    public function pasiens(){
+    public function pasiens() {
         return $this->hasMany(Pasien::class);
     }
 }
